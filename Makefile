@@ -4,8 +4,8 @@ SUBLEVEL = 61
 EXTRAVERSION =
 NAME = TOSSUG Baby Fish
 
-#TOOLCHAIN_DIR = $(CURDIR)/toolchain/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-
-TOOLCHAIN_DIR =/home/minealex2244/Desktop/SM-G920F/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+#TOOLCHAIN_DIR = /home/madscript/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-7.2.1-2017.11-i686_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+TOOLCHAIN_DIR =/home/madscript/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-7.2.1-2017.11-i686_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
 ifdef CONFIG_WITH_CCACHE
 ccache := ccache
@@ -203,8 +203,8 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # "make" in the configured kernel build directory always uses that.
 # Default value for CROSS_COMPILE is not to prefix executables
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
-ARCH		?= $(SUBARCH)
-CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
+ARCH		?= arm64
+CROSS_COMPILE	?= /home/madscript/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-7.2.1-2017.11-i686_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
