@@ -4,8 +4,8 @@ SUBLEVEL = 61
 EXTRAVERSION =
 NAME = TOSSUG Baby Fish
 
-#TOOLCHAIN_DIR = /home/madscript/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-4.9.4-2017.01-i686_aarch64-linux-gnu/bin/aarch64-linux-gnu-
-TOOLCHAIN_DIR =/home/madscript/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-4.9.4-2017.01-i686_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+#TOOLCHAIN_DIR = /home/xxh3x/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-4.9.4-2017.01-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+TOOLCHAIN_DIR = /home/xxh3x/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-4.9.4-2017.01-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
 ifdef CONFIG_WITH_CCACHE
 ccache := ccache
@@ -204,7 +204,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # Default value for CROSS_COMPILE is not to prefix executables
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 ARCH		?= arm64
-CROSS_COMPILE	?= /home/madscript/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-4.9.4-2017.01-i686_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+CROSS_COMPILE	?= /home/xxh3x/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-4.9.4-2017.01-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)

@@ -5,7 +5,7 @@
 RDIR=$(pwd)
 
 # directory containing cross-compile arm64 toolchain
-TOOLCHAIN=/home/madscript/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-4.9.4-2017.01-i686_aarch64-linux-gnu
+TOOLCHAIN= /home/xxh3x/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-4.9.4-2017.01-x86_64_aarch64-linux-gnu
 
 # device dependant variables
 PAGE_SIZE=2048
